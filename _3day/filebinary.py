@@ -1,6 +1,6 @@
 
 
-f = open("D:\WORK\python\_3day\Kalimba.mp3",'rb')
+f = open("Kalimba.mp3",'rb')
 
 data = f.read()    # bytes
 f.close()
@@ -10,7 +10,7 @@ f.write(data)
 f.close()
 
 #파일 곡명 확인하기 
-f = open("D:\WORK\python\_3day\Kalimba.mp3",'rb')
+f = open("Kalimba.mp3",'rb')
 f.seek(-128,2)    # 끝에서 128 바이트로 위치 이동
 tagdata = f.read(128)
 title = tagdata[3:33].decode()
