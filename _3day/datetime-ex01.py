@@ -47,5 +47,13 @@ print( exists("c:\\python38\\python.exe") )
 import os 
 
 print("운영체제이름:", os.name)
-os.system("notepad")
+os.system("notepad.exe")
+
+#파일 목록 가져오기
+import glob 
+result = glob.glob("D:\WORK\python\*.py")
+print( result )
+for item in result:
+    print(item)
+
 
