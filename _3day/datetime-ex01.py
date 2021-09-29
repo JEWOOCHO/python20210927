@@ -35,6 +35,7 @@ random.shuffle(lst)
 print( lst )
 
 
+
 #파일이름을 다루는 경우
 from os.path import * 
 
